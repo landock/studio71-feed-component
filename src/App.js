@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     console.log(this.newsFeed.getData());
     return (
-      <Container className="App">
+      <Container centered fluid className="App">
         <Header className="App-header">
-          Hello
+          Studio71 Feedz Thang
         </Header>
         <FeedCardCollection newsFeed={this.newsFeed.getData()}/>
       </Container>

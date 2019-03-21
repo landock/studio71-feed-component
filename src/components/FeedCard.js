@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 const FeedCard = ({title, message, imageSrc,subscribers }) => (
-    <Card>
+    <Card fluid>
       <Image centered size="small" src={imageSrc} />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
