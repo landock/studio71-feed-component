@@ -5,7 +5,7 @@ export default class NewsFeed {
     this.data = newsFeed;
   }
   getData() {
-    return this.data;
+    return this.data.items;
   }
   
 }
