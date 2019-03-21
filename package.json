@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fuse.js": "^3.4.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
+    "semantic-ui": "^2.4.2",
     "semantic-ui-react": "^0.86.0"
   },
   "scripts": {

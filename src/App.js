@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header } from 'semantic-ui-react'
 
 import NewsFeed from './models/NewsFeed'; 
-import FeedCardCollection from './components/FeedCardCollection'; 
+import FeedCollection from './components/FeedCollection'; 
 
 import './App.css';
 
@@ -15,11 +15,11 @@ class App extends Component {
   render() {
     console.log(this.newsFeed.getData());
     return (
-      <Container centered fluid className="App">
+      <Container>
         <Header className="App-header">
           Studio71 Feedz Thang
         </Header>
-        <FeedCardCollection newsFeed={this.newsFeed.getData()}/>
+        <FeedCollection newsFeed={this.newsFeed.getData()}/>
       </Container>
     );
   }
