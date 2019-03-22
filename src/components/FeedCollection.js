@@ -4,16 +4,37 @@ import { Item, Divider } from "semantic-ui-react";
 import FeedItem from "./FeedItem";
 
 export default function FeedItemCollection({ newsFeed }) {
+  if (newsFeed.length === 0) {
+    return <p>No Results</p>;
+  }
   const items = newsFeed.map((feed, index) => {
-    const key = feed.entity_id || index;
+    const {
+      entity_id,
+      estimated_subscribers_30_days,
+      percent_change_30_day,
+      name,
+      title,
+      message,
+      thumbnail,
+      subscribers,
+      type,
+      entity_type
+    } = feed;
+
+    const key = entity_id || index;
+
     const cardProps = {
-      title: feed.title,
-      message: feed.message,
-      imageSrc: feed.thumbnail,
-      subscribers: feed.subscribers,
-      recordType: feed.type,
-      entityType: feed.entity_type
+      name,
+      title,
+      subscribers,
+      message,
+      imageSrc: thumbnail,
+      recordType: type,
+      estimatedSubscribers: estimated_subscribers_30_days,
+      percentChange: percent_change_30_day,
+      entityType: entity_type
     };
+
     return (
       <React.Fragment key={key}>
         <FeedItem {...cardProps} />

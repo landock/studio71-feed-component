@@ -5,7 +5,7 @@ export default class NewsFeed {
   constructor() {
     const fuseOptions = {
       shouldSort: true,
-      threshold: 0.6,
+      threshold: 0.3,
       location: 0,
       distance: 100,
       maxPatternLength: 32,
@@ -21,6 +21,9 @@ export default class NewsFeed {
   }
 
   search(term) {
+    if (term.length === 0) {
+      return;
+    }
     return this.fuse.search(term);
   }
 }

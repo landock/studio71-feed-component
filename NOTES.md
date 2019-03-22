@@ -1,4 +1,3 @@
-The Basic Plan...
+# Hi folks
 
-
-
+I did it! I took a subset of the data points and tried to show them in an "intuitive" way. Obviously I don't have context on these things but data tends to want to look a certain way if you know what I mean. I added a simple fuzzy search utilty really just to show off that know how to pass data around inside a react app. If I had infinite time I'd probably add some nice touches like making the tags have different colors and the ability to filter the feed by those tags. I would have just put all that code in the model class. I don't think there's much more to add. Looking forward to meeting IRL if it comes to that ;)

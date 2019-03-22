@@ -1,5 +1,5 @@
 .App-header {
-  padding-top:10rem;
+  padding-top: 10rem;
   min-height: 10vh;
   font-size: calc(10px + 2vmin);
 }
@@ -8,3 +8,6 @@
   color: #61dafb;
 }
 
+#root > .feed-component > .btn-back {
+  margin-top: 1rem;
+}
